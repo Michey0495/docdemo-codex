@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codex CLI による要件定義から保守運用まで | 商談用説明資料</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <!-- 左側：固定タイムライン -->
+  <aside class="rail">
+    <div class="rail-brand">CODEX CLI</div>
+    <div class="rail-title">要件定義から<br>保守運用までの全工程</div>
+    <a class="rail-swap" href="https://docdemo-nu.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <span class="rail-swap-label">Claude Code 版を見る</span>
+      <span class="rail-swap-arrow" aria-hidden="true"></span>
+    </a>
+    <ul class="rail-list" id="rail-list"></ul>
+  </aside>
+
+  <!-- 右側：本文 -->
+  <main class="main">
+
+    <!-- ヒーロー -->
+    <section class="hero">
+      <span class="hero-tag">商談用 / 説明資料</span>
+      <h1>顧客ヒアリングから<br>本番運用まで、<em>Codex CLI が一気通貫で支える</em></h1>
+      <p class="hero-lead">下にスクロールしてください。10の工程それぞれで、入力、操作、適用される設定、生まれる成果が一目で並びます。各工程の「詳細を見る」ボタンを押すと、AGENTS.md、サブエージェント定義（~/.codex/agents/）、Hooks、Skills のプロンプトまで実物そのままで確認できます。</p>
+
+      <div class="scenario">
+        <div>
+          <div class="scenario-head">本日の架空案件</div>
+          <div class="scenario-name">
+            <span id="scenario-name">—</span>
+            <span class="industry" id="scenario-industry"></span>
+          </div>
+          <p class="scenario-brief" id="scenario-brief"></p>
+        </div>
+        <div class="scenario-meta" id="scenario-meta"></div>
+      </div>
+    </section>
+
+    <!-- 工程カード群 -->
+    <div id="phases"></div>
+
+    <!-- サマリ -->
+    <div id="summary"></div>
+
+    <footer class="footer">
+      <div>架空案件「架空株式会社（フィクション）」をもとに、Codex CLI 上での実運用を再現した商談用デモ資料</div>
+      <div>v1.0 / 2026-05</div>
+    </footer>
+  </main>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
